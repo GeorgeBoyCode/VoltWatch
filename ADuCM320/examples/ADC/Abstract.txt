@@ -1,0 +1,1 @@
+Sets up ADC for continuous sampling of AIN4 input channel in Single ended mode.

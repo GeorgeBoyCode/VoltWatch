@@ -1,0 +1,1167 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: George Boyhan, Student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.43.0.0
+Toolchain Path:  C:\Users\George\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.24
+Assembler:       Armasm.exe V6.24
+Linker/Locator:  ArmLink.exe V6.24
+Library Manager: ArmAr.exe V6.24
+Hex Converter:   FromElf.exe V6.24
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      Segger\JL2CM3.dll V2.99.45.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\Users\George\gitRepos\VoltWatch\ADuCM320\examples\ADC\ADC.uvprojx
+Project File Date:  08/17/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.24', folder: 'C:\Users\George\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'ADC'
+RTE/Device/ADuCM320/UrtLib.c(34): warning: In file included from...
+RTE/Device/ADuCM320\UrtLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/UrtLib.c(34): warning: In file included from...
+RTE/Device/ADuCM320\UrtLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/UrtLib.c(34): warning: In file included from...
+RTE/Device/ADuCM320\UrtLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/UrtLib.c(34): warning: In file included from...
+RTE/Device/ADuCM320\UrtLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/UrtLib.c(34): warning: In file included from...
+RTE/Device/ADuCM320\UrtLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling UrtLib.c...
+RTE/Device/ADuCM320/DacLib.c(33): warning: In file included from...
+RTE/Device/ADuCM320\DacLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DacLib.c(33): warning: In file included from...
+RTE/Device/ADuCM320\DacLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DacLib.c(33): warning: In file included from...
+RTE/Device/ADuCM320\DacLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DacLib.c(33): warning: In file included from...
+RTE/Device/ADuCM320\DacLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DacLib.c(33): warning: In file included from...
+RTE/Device/ADuCM320\DacLib.h(34): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling DacLib.c...
+RTE/Device/ADuCM320/AdcLib.c(32): warning: In file included from...
+RTE/Device/ADuCM320\AdcLib.h(28): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/AdcLib.c(32): warning: In file included from...
+RTE/Device/ADuCM320\AdcLib.h(28): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/AdcLib.c(32): warning: In file included from...
+RTE/Device/ADuCM320\AdcLib.h(28): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/AdcLib.c(32): warning: In file included from...
+RTE/Device/ADuCM320\AdcLib.h(28): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/AdcLib.c(32): warning: In file included from...
+RTE/Device/ADuCM320\AdcLib.h(28): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling AdcLib.c...
+RTE/Device/ADuCM320/IntLib.c(28): warning: In file included from...
+RTE/Device/ADuCM320\IntLib.h(29): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/IntLib.c(28): warning: In file included from...
+RTE/Device/ADuCM320\IntLib.h(29): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/IntLib.c(28): warning: In file included from...
+RTE/Device/ADuCM320\IntLib.h(29): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/IntLib.c(28): warning: In file included from...
+RTE/Device/ADuCM320\IntLib.h(29): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/IntLib.c(28): warning: In file included from...
+RTE/Device/ADuCM320\IntLib.h(29): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling IntLib.c...
+RTE/Device/ADuCM320/DioLib.c(27): warning: In file included from...
+RTE/Device/ADuCM320\DioLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DioLib.c(27): warning: In file included from...
+RTE/Device/ADuCM320\DioLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DioLib.c(27): warning: In file included from...
+RTE/Device/ADuCM320\DioLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DioLib.c(27): warning: In file included from...
+RTE/Device/ADuCM320\DioLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/DioLib.c(27): warning: In file included from...
+RTE/Device/ADuCM320\DioLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling DioLib.c...
+RTE/Device/ADuCM320/WdtLib.c(25): warning: In file included from...
+RTE/Device/ADuCM320\WdtLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/WdtLib.c(25): warning: In file included from...
+RTE/Device/ADuCM320\WdtLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/WdtLib.c(25): warning: In file included from...
+RTE/Device/ADuCM320\WdtLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/WdtLib.c(25): warning: In file included from...
+RTE/Device/ADuCM320\WdtLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/WdtLib.c(25): warning: In file included from...
+RTE/Device/ADuCM320\WdtLib.h(27): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling WdtLib.c...
+src/ADC_Demo.c(31): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+src/ADC_Demo.c(31): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+src/ADC_Demo.c(31): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+src/ADC_Demo.c(31): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+src/ADC_Demo.c(31): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\DeviceHeader.h(1): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling ADC_Demo.c...
+RTE/Device/ADuCM320/system_ADUCM320.c(24): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: unknown type name 'inline'
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(408): error: expected ';' after top level declarator
+  408 | __STATIC_FORCEINLINE uint32_t __RRX(uint32_t value)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: unknown type name 'inline'
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(423): error: expected ';' after top level declarator
+  423 | __STATIC_FORCEINLINE uint8_t __LDRBT(volatile uint8_t *ptr)
+      |                             ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: unknown type name 'inline'
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(438): error: expected ';' after top level declarator
+  438 | __STATIC_FORCEINLINE uint16_t __LDRHT(volatile uint16_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: unknown type name 'inline'
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(453): error: expected ';' after top level declarator
+  453 | __STATIC_FORCEINLINE uint32_t __LDRT(volatile uint32_t *ptr)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(621): error: unknown type name 'inline'
+  621 | __STATIC_FORCEINLINE void __enable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(634): error: unknown type name 'inline'
+  634 | __STATIC_FORCEINLINE void __disable_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(646): error: unknown type name 'inline'
+  646 | __STATIC_FORCEINLINE void __enable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(657): error: unknown type name 'inline'
+  657 | __STATIC_FORCEINLINE void __disable_fault_irq(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: unknown type name 'inline'
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(670): error: expected ';' after top level declarator
+  670 | __STATIC_FORCEINLINE uint32_t __get_FPSCR(void)
+      |                              ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(685): error: unknown type name 'inline'
+  685 | __STATIC_FORCEINLINE void __set_FPSCR(uint32_t fpscr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/system_ADUCM320.c(24): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(86): error: unknown type name 'inline'
+   86 | __STATIC_FORCEINLINE void __STRBT(uint8_t value, volatile uint8_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/system_ADUCM320.c(24): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(98): error: unknown type name 'inline'
+   98 | __STATIC_FORCEINLINE void __STRHT(uint16_t value, volatile uint16_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/system_ADUCM320.c(24): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(110): error: unknown type name 'inline'
+  110 | __STATIC_FORCEINLINE void __STRT(uint32_t value, volatile uint32_t *ptr)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+RTE/Device/ADuCM320/system_ADUCM320.c(24): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common\ADuCM320.h(120): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\core_cm3.h(116): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_compiler.h(32): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(702): warning: In file included from...
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\./m-profile/cmsis_armclang_m.h(128): error: unknown type name 'inline'
+  128 | __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
+      | ^
+C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include\cmsis_armclang.h(47): note: expanded from macro '__STATIC_FORCEINLINE'
+   47 |   #define __STATIC_FORCEINLINE                   __attribute__((always_inline)) static inline
+      |                                                                                        ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+compiling system_ADUCM320.c...
+assembling startup_ADuCM320.s...
+".\obj\ADC.axf" - 152 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.3.0.pack
+                ARM::CMSIS@6.3.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.2.0
+
+Package Vendor: AnalogDevices
+                https://download.analog.com/tools/EZBoards/ADuCM32x/Releases/AnalogDevices.ADuCM320_DFP.1.1.1.pack
+                AnalogDevices::ADuCM320_DFP@1.1.1
+                Analog Devices ADuCM320 Device Support and Examples
+   * Component: Startup Version: 1.0.0
+   * Component: ADC Version: 1.0.0
+   * Component: DAC Version: 1.0.0
+   * Component: DIO Version: 1.0.0
+   * Component: INT Version: 1.0.0
+   * Component: UART Version: 1.0.0
+   * Component: WDT Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/ADuCM320
+  ./RTE/_ADC
+  C:/Users/George/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include
+  C:/Users/George/AppData/Local/Arm/Packs/AnalogDevices/ADuCM320_DFP/1.1.1/ADuCM320/common
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.2.0
+
+   * Component: Analog Devices::Device:Startup@1.0.0
+      Source file:   ADuCM320/common/ARM/startup_ADuCM320.s
+      Source file:   ADuCM320/common/system_ADUCM320.c
+
+   * Component: AnalogDevices::Device:Peripheral Libraries:ADC@1.0.0
+      Include file:  ADuCM320/common/AdcLib.h
+      Source file:   ADuCM320/common/AdcLib.c
+
+   * Component: AnalogDevices::Device:Peripheral Libraries:DAC@1.0.0
+      Include file:  ADuCM320/common/DacLib.h
+      Source file:   ADuCM320/common/DacLib.c
+
+   * Component: AnalogDevices::Device:Peripheral Libraries:DIO@1.0.0
+      Include file:  ADuCM320/common/DioLib.h
+      Source file:   ADuCM320/common/DioLib.c
+
+   * Component: AnalogDevices::Device:Peripheral Libraries:INT@1.0.0
+      Include file:  ADuCM320/common/IntLib.h
+      Source file:   ADuCM320/common/IntLib.c
+
+   * Component: AnalogDevices::Device:Peripheral Libraries:UART@1.0.0
+      Source file:   ADuCM320/common/UrtLib.c
+      Include file:  ADuCM320/common/UrtLib.h
+
+   * Component: AnalogDevices::Device:Peripheral Libraries:WDT@1.0.0
+      Include file:  ADuCM320/common/WdtLib.h
+      Source file:   ADuCM320/common/WdtLib.c
+Target not created.
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
